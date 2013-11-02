@@ -1,0 +1,30 @@
+!!! XML
+!!! 5
+%html
+  %head
+    %title Empires At War
+    = stylesheet_link_tag :application, :media => "all"
+    = javascript_include_tag :application
+    = csrf_meta_tag
+    
+  %body
+    %header.black-gradient
+      %section.clearfix
+        %hgroup.logo
+          %h1.eagle.orange-txt= link_to raw("E<span class='h2'>mpires</span>"), '/'
+          %h3.gilda.orange-txt= link_to "at", '/' 
+          %h1.gilda.orange-txt= link_to raw("W</span><span class='h2'>ar</span>"), "/"
+    
+    #content
+      %section.clearfix
+        = yield
+
+    %footer.black-gradient
+      %section.clearfix
+        %p.small-12.copyright.one-third= raw "&copy 2013 Empires at War"
+        .credits.one-third
+          %p.small-12= raw "Designed and developed by Keith Raymond | #{link_to 'ifkeithraymond.com', 'http://ifkeithraymond.com', :rel => 'external'}" 
+          %p.small-12= raw "Additional designed and artwork by Nate Baer | #{link_to 'designnatebaer.com', 'http://designnatebaer.com', :rel => 'external'}"
+        %menu.social.li-right.one-third
+          %li.small-12= link_to 'twitter', "#twitter", :class => 'twitter icon' 
+          %li.small-12= link_to 'facebook', "#facebook", :class => 'facebook icon' 

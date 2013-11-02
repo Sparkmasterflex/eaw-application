@@ -1,0 +1,32 @@
+@import 'mixins';
+
+.facebook { background-image: url(icons/facebook.png); }
+.twitter { background-image: url(icons/twitter.png); }
+.add { background-image: url(icons/add.png); }
+
+.egypt { background-image: url(empires/egypt.png);  }
+.rome { background-image: url(empires/rome.png); @include bg-size(100%, auto); }
+.gaul { background-image: url(empires/gaul.png); @include bg-size(100%, auto); }
+.carthage { background-image: url(empires/carthage.png); @include bg-size(100%, auto); }
+.japan { background-image: url(empires/japan.png); @include bg-size(100%, auto); }
+.egypt, .rome, .gaul, .carthage, .japan {
+  background-repeat: no-repeat;
+  background-position: center top;
+  @include bg-size(auto, 80%);
+}
+
+
+.icon {
+  @include square(16px);
+  @include hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:hover { @include rotate(5deg); }
+  &.twitter, &.facebook { @include square(32px); }
+}
+
+.w-icon {
+  padding: 0.25em 0 0.25em 1.67em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

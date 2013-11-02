@@ -1,0 +1,96 @@
+@import 'mixins';
+
+.orange-txt, a.orange-txt { 
+  color: $orange;
+  a { color: inherit; &:hover { color: $dk-orange; }} 
+}
+.black-txt, a.black-txt { 
+  color: $black2;
+  a { color: inherit; &:hover { color: $black4; }} 
+}
+
+.arial { font-family: Arial, Helvetica, san-serif; }
+.eagle { font-family: 'Eagle Lake', cursive; text-transform: uppercase; }
+.gilda { font-family: 'Gilda Display', serif; }
+
+.upper { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+
+.black-gradient {
+  @include gradient-two($black2, $black4);
+}
+
+.lt-greybox {
+  background: $grey-e;
+  border: 1px solid $grey-c;
+}
+
+.orange, a.orange {
+  background: $orange;
+  border: 1px solid $dk-orange;
+  @include border-radius(3px);
+  color: $black2;
+  &:hover { color: $black4; background: $dk-orange; }
+}
+
+.black, a.black {
+  @include black-btn;
+}
+
+.credits, 
+.copyright, 
+.social { 
+  float: left; 
+  color: $orange;
+  a { color: $dk-orange; text-decoration: underline;
+    &:hover { color: $orange; text-decoration: none; }
+  }
+}
+
+.greybox {
+  @include gradient-two(#ccc, #e1e1e1);
+  border: 1px solid #aaa;
+}
+
+.whitebox {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  @include transition(background-color, 0.25s);
+  li.percent { text-align: center; }
+  &:hover { background-color: #ddd; }
+}
+
+.bevel-boarder {
+  border: {
+    top: 1px solid #fff;
+    bottom: 1px solid #777;
+  }
+  &:first-child { border-top-color: transparent; }
+  &:last-child { border-bottom-color: transparent; }
+}
+
+.black-transparent {
+  padding: 0.25em 0;
+  background: $black4;
+  background: rgba(68, 68, 68, 0.75);
+  li, p, a { color: $orange; }
+}
+
+//-------------------------------------------- Cycle2 styles
+.cycle-slideshow { position: relative; }
+.cycle-pager {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 300;
+  span {
+    @include square(20px);
+    margin-right: 1em;
+    background: #fff;
+    border: 1px solid $grey-9;
+    @include border-radius(10px);
+    @include hidden;
+    cursor: pointer;
+    &:hover, &.cycle-pager-active { background: $orange; }
+  }
+}

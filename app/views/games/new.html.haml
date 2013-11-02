@@ -1,0 +1,12 @@
+%h2.h1.gilda.margin-bottom-20 Create Game
+= form_for @game, :url => games_path, :html => {:method => :post} do |f|
+  .field
+    = f.label :difficulty
+    = f.select :difficulty, Game::Difficulty.options_for_select
+  
+  = f.fields_for :empires do |e|
+    = e.label :clan, "Empire"
+    = e.select :clan, Empire::Empires.options_for_select
+    = e.hidden_field :user_id, :value => current_user.id
+    
+  = f.submit "Create Game"

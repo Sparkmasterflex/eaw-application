@@ -1,0 +1,24 @@
+.slideshow.cycle-slideshow{'data-cycle-speed' => '250', 'data-cycle-timeout' => "0", 'data-cycle-slides' => ".slide"}
+  .cycle-pager
+  = render partial: 'slides'
+      
+.margin-bottom-20.clearfix
+  .half.left
+    .pad-20
+      %h2.gilda.align-center.margin-bottom-20 Online Strategy Game
+      %p Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.
+      %p Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+      = link_to "View Empires", view_empires_website_index_path, class: 'eagle h3 orange button'
+
+  .half.right
+    .pad-20
+      %h2.gilda.align-center.margin-bottom-20 Sign up Today
+      = form_for @user, url: user_session_path, html: { class: 'clearfix'} do |f|
+        .field.three-quarters
+          = f.text_field :username, {placeholder: 'Username', class: 'gilda h3'}
+        .field.three-quarters
+          = f.email_field :email, {placeholder: 'Email', class: 'gilda h3'}
+        .field.three-quarters
+          = f.password_field :password, {placeholder: 'Password', class: 'gilda h3'}
+        .field.three-quarters.clearfix
+          = f.submit "Submit", class: 'eagle h3 orange button right'

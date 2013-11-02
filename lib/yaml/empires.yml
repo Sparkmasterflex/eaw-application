@@ -1,0 +1,148 @@
+empires:
+  gaul:
+    name: The Gaul
+    html_class: gaul
+    desc:
+      1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga. 
+      2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga.
+    images:
+      1: 
+        src: empires/gaul/druid.png
+        alt: Druid
+        title: Druid
+      2: 
+        src: empires/gaul/sorcerer.png
+        alt: Sorcerer
+        title: Sorcerer
+      3: 
+        src: empires/gaul/wickerman.png
+        alt: Wickerman
+        title: Wickerman
+      4: 
+        src: empires/gaul/archer.png
+        alt: Archer
+        title: Archer
+      5: 
+        src: empires/gaul/swordMan.png
+        alt: Swordsman
+        title: Swordsman
+      6: 
+        src: empires/gaul/lightCavalry.png
+        alt: Light Cavalry
+        title: Light Cavalry
+  rome:
+    name: Romans
+    html_class: rome
+    desc:
+      1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga. 
+      2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga.
+    images:
+      1: 
+        src: empires/rome/clibanarii.png
+        alt: Druid
+        title: Druid
+      2: 
+        src: empires/rome/sorcerer.png
+        alt: Sorcerer
+        title: Sorcerer
+      3:
+        src: empires/rome/war-dogs.png
+        alt: War Dogs
+        title: Sorcerer
+      4: 
+        src: empires/rome/romeWarrior.png
+        alt: Swordsman
+        title: Swordsman
+      5: 
+        src: empires/rome/lightCavalry.png
+        alt: Light Cavalry
+        title: Light Cavalry
+  egypt:
+    name: Egyptians
+    html_class: egypt
+    desc: 
+      1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga. 
+      2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga.
+    images:
+      1: 
+        src: empires/egypt/egyptChariot.png
+        alt: Druid
+        title: Druid
+      2: 
+        src: empires/egypt/sorcerer.png
+        alt: Sorcerer
+        title: Sorcerer
+      3: 
+        src: empires/egypt/nubianArcher.png
+        alt: Wickerman
+        title: Wickerman
+      4: 
+        src: empires/egypt/setWarrior.png
+        alt: Archer
+        title: Archer
+      5:
+        src: empires/egypt/lightCavalry.png
+        alt: Light Cavalry
+        title: Light Cavalry
+  carthage:
+    name: Carthaginians
+    html_class: carthage
+    desc: 
+      1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga. 
+      2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga.
+    images:
+      1: 
+        src: empires/gaul/druid.png
+        alt: Druid
+        title: Druid
+      2: 
+        src: empires/gaul/sorcerer.png
+        alt: Sorcerer
+        title: Sorcerer
+      3: 
+        src: empires/gaul/wickerman.png
+        alt: Wickerman
+        title: Wickerman
+      4: 
+        src: empires/gaul/archer.png
+        alt: Archer
+        title: Archer
+      5: 
+        src: empires/gaul/swordMan.png
+        alt: Swordsman
+        title: Swordsman
+      6: 
+        src: empires/gaul/lightCavalry.png
+        alt: Light Cavalry
+        title: Light Cavalry
+  japan:
+    name: Japanese
+    html_class: japan
+    desc: 
+      1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga. 
+      2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate, aut, itaque recusandae non dolores unde debitis maxime nulla fuga.
+    images:
+      1: 
+        src: empires/gaul/druid.png
+        alt: Druid
+        title: Druid
+      2: 
+        src: empires/gaul/sorcerer.png
+        alt: Sorcerer
+        title: Sorcerer
+      3: 
+        src: empires/gaul/wickerman.png
+        alt: Wickerman
+        title: Wickerman
+      4: 
+        src: empires/gaul/archer.png
+        alt: Archer
+        title: Archer
+      5: 
+        src: empires/gaul/swordMan.png
+        alt: Swordsman
+        title: Swordsman
+      6: 
+        src: empires/gaul/lightCavalry.png
+        alt: Light Cavalry
+        title: Light Cavalry

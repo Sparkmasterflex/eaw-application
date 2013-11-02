@@ -1,0 +1,9 @@
+.empire.bevel-boarder.clearfix
+  .one-quarter.left
+    %h2.gilda.emp-box.align-center{class: empire['html_class']}= empire['name']
+  .half.left
+    - empire['desc'].each do |key, p|
+      %p= p
+  .thumbs.one-quarter.left
+    - empire['images'].each do |key, img|
+      = link_to image_tag(img['src'], {alt: img['alt'], title: img['title']}), asset_path(img['src']), {class: 'thumb black', rel: empire['html_class']}

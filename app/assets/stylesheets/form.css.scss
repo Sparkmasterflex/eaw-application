@@ -1,0 +1,40 @@
+@import 'mixins';
+
+input[type=text], 
+input[type=email], 
+input[type=date], 
+input[type=password],
+select, textarea {
+  // font-size: 1.8em;
+  width: 93%;
+  padding: 0.5em;
+  background: $grey-c;
+  border: 1px solid #999;
+  @include border-radius(3px);
+  &:focus { background: $orange; color: $black2; }
+}
+
+input[type=submit].button { padding: 0 1em; }
+
+.field {
+  margin: 2em auto;
+}
+
+::-webkit-input-placeholder { color: $black4; }
+:-moz-placeholder { color: $black4; }
+::-moz-placeholder { color: $black4; }
+:-ms-input-placeholder { color: $black4; }
+
+form.small-signin {
+  display: none;
+  position: absolute;
+  z-index: 140;
+  top: 1.45em;
+  right: 0;
+  width: 15em;
+  padding: 1em;
+  background: $orange;
+  border: 1px solid $dk-orange;
+  @include border-radius(3px);
+  a { font-size: 0.67em; }
+}

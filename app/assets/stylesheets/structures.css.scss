@@ -1,0 +1,135 @@
+@import 'mixins';
+
+header nav { 
+  float: right;
+  width: 60%; 
+  padding: 4.1em 0;
+}
+
+.main-nav {
+  width: auto;
+  float: right;
+  li { 
+    float: left;
+    padding: 0.15em 0;
+    margin: 0 0.75em;
+    &:last { margin-right: 0; }
+    a.h3 {
+      font-size: 1.17em;
+      padding: 0 0.25em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      &:hover { @include black-btn; }
+      &.button { 
+        position: relative;
+        margin-top: -0.5em;
+        padding: 0.25em 1em;
+        &.clicked { 
+          background: $orange;
+          border-bottom-color: transparent; 
+        }
+      }
+    }
+  }
+}
+
+footer section { padding: 2.3em 0; }
+
+.top-page { margin-top: 1em; }
+
+.button {
+  display: inline-block;
+  padding: 0.25em 1em;
+  margin: 0;
+}
+
+menu.li-right li { float: right; margin: 0 0.5em; }
+
+// different font-sizes
+.small-12 { font-size: 1.2em; }
+
+.left { float: left; }
+.right { float: right; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+.full { width: 100%; }
+// thirds
+.one-third { width: 33%; }
+.two-thirds { width: 66%; }
+// quarters
+.one-quarter { width: 25%; }
+.half { width: 50%; }
+.three-quarters { width: 75%; }
+
+// padding
+.pad-20 {
+  padding: 2em;
+  .button { margin-top: 1em; }
+}
+
+// margin
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-right-20 { margin-right: 20px; }
+
+.slideshow { margin: 1em 0em; }
+.slide {
+  position: relative;
+  padding: 2em;
+  height: 36em;
+  img { 
+    position: absolute;
+    top: -3em;
+    &.wide { left: -2em; }
+  }
+}
+
+.dropdown {
+  position: relative;
+  a.button { z-index: 150; }
+}
+
+.empire { padding: 2em 0; }
+.emp-box {
+  padding: 4em 0 0.5em;
+}
+
+.enemy {
+  position: relative;
+  display: inline-block;
+  @include square(100px);
+  padding: 1em;
+  background-position: center center;
+  a.add { 
+    position: absolute;
+    bottom: 0.25em;
+    right: 0.25em;
+    @include square(20px); 
+  }
+}
+
+ul.stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 21px;
+  li {
+    font-size: 0.67em;
+    margin-bottom: 0.5em;
+    padding: 0 0.75em;
+    &.h2 { font-size: 1.17em; }
+  }
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+  @include square(70px);
+  img {
+    position: absolute;
+    top: -5px;
+    width: 70px;
+  }
+}

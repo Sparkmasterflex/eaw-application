@@ -1,0 +1,12 @@
+{
+	'game': {
+		'empire_id': '1',
+    'difficulty': '10',
+    'status': '10',
+    'turn': '1'
+	},
+  'empire': {
+    'empire': '40',
+    'treasury': '0'
+  }
+}

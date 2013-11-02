@@ -1,0 +1,59 @@
+- if @game.nil?
+  %h2.h1.gilda.margin-bottom-20 No Game Started
+  = link_to "Create one now?", new_game_path, class: 'orange button'
+- else
+  .margin-bottom-20.clearfix
+    %h2.h1.gilda.margin-bottom-20= "Current Game"
+    .half.left
+      #game.pad-20{'data-path' => swf_path('empiresAtWar'), 'data-game' => @game.id}
+        %h2.emp-box.gilda.align-center{class: @game.user_empire.empire_klass}= @game.empire_name
+
+    .half.right
+      .pad-20
+        %h2.gilda.margin-bottom-20 Empire Info
+        %ul
+          %li= current_user.name
+          %li= "Turn: #{@game.turn}"
+          %li= "Treasury: #{@game.user_empire.treasury}"
+          %li= "Last Played: #{current_user.last_sign_in_at.strftime('%m/%d/%Y %H:%I')}"
+          %li= link_to "#{@game.turn > 1 ? 'Continue' : 'Start'} Game", "#begin_game", class: 'start orange button'
+
+.greybox.margin-bottom-20
+  .pad-20
+    %h2.gilda.margin-bottom-20 Other Empires
+    %ul
+      %li.rome.enemy.whitebox 
+        %ul.stats.black-transparent
+          %li.percent.h2 30%
+          %li Military: 13%
+          %li Economy: 18%
+          %li Population: 12%
+        = link_to "more", "#show_more", class: 'add icon'
+      %li.carthage.enemy.whitebox
+        %ul.stats.black-transparent
+          %li.percent.h2 13%
+          %li Military: 13%
+          %li Economy: 18%
+          %li Population: 12%
+        = link_to "more", "#show_more", class: 'add icon'
+      %li.japan.enemy.whitebox
+        %ul.stats.black-transparent
+          %li.percent.h2 11%
+          %li Military: 13%
+          %li Economy: 18%
+          %li Population: 12%
+        = link_to "more", "#show_more", class: 'add icon'
+      %li.egypt.enemy.whitebox
+        %ul.stats.black-transparent
+          %li.percent.h2 42%
+          %li Military: 13%
+          %li Economy: 18%
+          %li Population: 12%
+        = link_to "more", "#show_more", class: 'add icon'
+      %li.gaul.enemy.whitebox
+        %ul.stats.black-transparent
+          %li.percent.h2 9%
+          %li Military: 13%
+          %li Economy: 18%
+          %li Population: 12%
+        = link_to "more", "#show_more", class: 'add icon'

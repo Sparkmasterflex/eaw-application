@@ -1,0 +1,4 @@
+%h2.h1.gilda.margin-bottom-20 Empires
+.greybox.pad-20.margin-bottom-20
+  - @empires.each do |key, value|
+    = render partial: "empire", :locals => {:empire => value}
